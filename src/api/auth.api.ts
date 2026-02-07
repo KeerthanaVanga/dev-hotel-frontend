@@ -19,3 +19,21 @@ export const logout = () => {
 export const me = () => {
   return api.get("/auth/me");
 };
+export interface AdminProfile {
+  id: number;
+  username: string;
+  email: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export const getProfile = () => {
+  return api.get<{ profile: AdminProfile }>("/auth/profile");
+};
+
+export const changePassword = (data: {
+  currentPassword: string;
+  newPassword: string;
+}) => {
+  return api.post("/auth/change-password", data);
+};

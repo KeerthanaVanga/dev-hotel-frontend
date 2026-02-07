@@ -5,7 +5,7 @@ import { FormStepGuestDetails } from "../components/bookings/FormStepGuestDetail
 import { FormStepPayment } from "../components/bookings/FormStepPayment";
 import { StepIndicator } from "../components/bookings/StepIndicator";
 import { FormActions } from "../components/bookings/FormActions";
-import { useCreateBooking } from "../components/hooks/useCreateBooking";
+import { useCreateBooking } from "../hooks/useCreateBooking";
 import type { CreateBookingFormValues } from "../types/CreateBookingForm";
 import { INITIAL_CREATE_BOOKING_FORM } from "../types/CreateBookingForm";
 import type { CreateBookingPayload } from "../api/bookings.api";
