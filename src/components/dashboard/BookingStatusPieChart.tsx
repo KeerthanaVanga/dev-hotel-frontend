@@ -1,5 +1,5 @@
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
-import type { BookingStatusItem } from "../../../types/Dashboard";
+import type { BookingStatusItem } from "../../types/Dashboard";
 
 const COLORS: Record<string, string> = {
   confirmed: "#22c55e",

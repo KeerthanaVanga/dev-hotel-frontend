@@ -6,7 +6,7 @@ import {
   YAxis,
   Tooltip,
 } from "recharts";
-import type { HourlyBookingPoint } from "../../../types/Dashboard";
+import type { HourlyBookingPoint } from "../../types/Dashboard";
 
 export default function TodayBookingsChart({
   data,
