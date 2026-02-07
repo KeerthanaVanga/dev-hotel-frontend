@@ -28,7 +28,7 @@ export default function CreateBookingPage() {
 
       <StepIndicator currentStep={step} />
 
-      <div className="rounded-xl border border-[#3A1A22] bg-gradient-to-b from-[#241217] to-[#1F1216] p-6">
+      <div className="rounded-xl border border-[#3A1A22] bg-linear-to-b from-[#241217] to-[#1F1216] p-6">
         <Formik<CreateBookingFormValues>
           initialValues={INITIAL_CREATE_BOOKING_FORM}
           validationSchema={currentSchema}
@@ -109,7 +109,7 @@ export default function CreateBookingPage() {
                 isCreateLoading={mutation.isPending}
               />
 
-              <div className="min-h-[1.25rem] text-center text-sm text-red-400">
+              <div className="min-h-5 text-center text-sm text-red-400">
                 {(availabilityError || mutation.isError) &&
                   (availabilityError ?? (mutation.error as Error).message)}
               </div>

@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import type { FormikErrors } from "formik";
-import { checkAvailability, createBooking } from "../../api/bookings.api";
-import type { CreateBookingFormValues } from "../../types/CreateBookingForm";
-import { getStepSchema, type CreateBookingStep } from "../../utils/booking";
+import { checkAvailability, createBooking } from "../api/bookings.api";
+import type { CreateBookingFormValues } from "../types/CreateBookingForm";
+import { getStepSchema, type CreateBookingStep } from "../utils/booking";
 
 export function useCreateBooking(
   showToast: (type: "success" | "error", message: string) => void,
