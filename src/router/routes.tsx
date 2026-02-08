@@ -27,6 +27,7 @@ const OffersPage = lazy(() => import("../pages/OffersPage"));
 const OffersFormPage = lazy(() => import("../pages/OfferForm"));
 const ReportsPage = lazy(() => import("../pages/Reports"));
 const SettingsPage = lazy(() => import("../pages/Settings"));
+const InventoryDetailsPage = lazy(() => import("../pages/InventoryDetails"));
 
 const router = createBrowserRouter([
   {
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
               {
                 path: "/inventory",
                 element: <InventoryPage />,
+              },
+              {
+                path: "/inventory/:propertyToken",
+                element: <InventoryDetailsPage />,
               },
               {
                 path: "/reports",
