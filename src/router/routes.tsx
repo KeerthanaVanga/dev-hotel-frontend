@@ -19,6 +19,7 @@ const RoomEditPage = lazy(() => import("../components/rooms/RoomFormPage"));
 const UsersPage = lazy(() => import("../pages/Users"));
 const BookingsPage = lazy(() => import("../pages/Bookings"));
 const CreateBookingPage = lazy(() => import("../pages/CreateBooking"));
+const RescheduleBookingPage = lazy(() => import("../pages/RescheduleBooking"));
 const PaymentsPage = lazy(() => import("../pages/Payments"));
 const ReviewsPage = lazy(() => import("../pages/Reviews"));
 const WhatsAppBotPage = lazy(() => import("../pages/Whatsapp"));
@@ -106,6 +107,10 @@ const router = createBrowserRouter([
                   {
                     path: "new",
                     element: <CreateBookingPage />,
+                  },
+                  {
+                    path: ":id/reschedule",
+                    element: <RescheduleBookingPage />,
                   },
                 ],
               },
