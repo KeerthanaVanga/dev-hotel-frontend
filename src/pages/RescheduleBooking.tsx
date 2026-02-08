@@ -89,7 +89,7 @@ export default function RescheduleBookingPage() {
 
       <StepIndicator currentStep={step} />
 
-      <div className="rounded-xl border border-[#3A1A22] bg-gradient-to-b from-[#241217] to-[#1F1216] p-6">
+      <div className="rounded-xl border border-[#3A1A22] bg-linear-to-b from-[#241217] to-[#1F1216] p-6">
         <Formik<CreateBookingFormValues>
           initialValues={initialValues}
           validationSchema={currentSchema}

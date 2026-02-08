@@ -19,11 +19,11 @@ export default function RescheduleBookingSkeleton() {
       </div>
 
       {/* Form card skeleton – room + dates grid + actions */}
-      <div className="rounded-xl border border-[#3A1A22] bg-gradient-to-b from-[#241217] to-[#1F1216] p-6">
+      <div className="rounded-xl border border-[#3A1A22] bg-linear-to-b from-[#241217] to-[#1F1216] p-6">
         <div className="space-y-6">
           <div className="grid grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-4">
             {/* Room select row */}
-            <div className="min-w-0 [grid-column:1/-1] space-y-2">
+            <div className="min-w-0 col-span-full space-y-2">
               <Skeleton className="h-4 w-12" />
               <Skeleton className="h-10 w-full rounded-md" />
             </div>
