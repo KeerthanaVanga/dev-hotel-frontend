@@ -20,6 +20,7 @@ const UsersPage = lazy(() => import("../pages/Users"));
 const BookingsPage = lazy(() => import("../pages/Bookings"));
 const CreateBookingPage = lazy(() => import("../pages/CreateBooking"));
 const PaymentsPage = lazy(() => import("../pages/Payments"));
+const ReviewsPage = lazy(() => import("../pages/Reviews"));
 const OffersPage = lazy(() => import("../pages/OffersPage"));
 const OffersFormPage = lazy(() => import("../pages/OfferForm"));
 
@@ -121,6 +122,10 @@ const router = createBrowserRouter([
               {
                 path: "/payments",
                 element: <PaymentsPage />,
+              },
+              {
+                path: "/reviews",
+                element: <ReviewsPage />,
               },
             ],
           },
