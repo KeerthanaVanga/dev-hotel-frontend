@@ -24,6 +24,8 @@ const ReviewsPage = lazy(() => import("../pages/Reviews"));
 const WhatsAppBotPage = lazy(() => import("../pages/Whatsapp"));
 const OffersPage = lazy(() => import("../pages/OffersPage"));
 const OffersFormPage = lazy(() => import("../pages/OfferForm"));
+const ReportsPage = lazy(() => import("../pages/Reports"));
+const SettingsPage = lazy(() => import("../pages/Settings"));
 
 const router = createBrowserRouter([
   {
@@ -63,6 +65,10 @@ const router = createBrowserRouter([
               {
                 path: "/inventory",
                 element: <InventoryPage />,
+              },
+              {
+                path: "/reports",
+                element: <ReportsPage />,
               },
               {
                 path: "/rooms",
@@ -127,6 +133,10 @@ const router = createBrowserRouter([
               {
                 path: "/reviews",
                 element: <ReviewsPage />,
+              },
+              {
+                path: "/settings",
+                element: <SettingsPage />,
               },
               {
                 path: "/whatsapp",

@@ -37,3 +37,32 @@ export const changePassword = (data: {
 }) => {
   return api.post("/auth/change-password", data);
 };
+export interface AdminListItem {
+  id: number;
+  username: string;
+  email: string;
+  createdAt: string;
+}
+
+export const getAdmins = () => {
+  return api.get<{ admins: AdminListItem[] }>("/auth/admins");
+};
+
+export const createAdminApi = (data: {
+  username: string;
+  email: string;
+  password: string;
+}) => {
+  return api.post("/auth/admins", data);
+};
+
+export const updateAdminApi = (
+  id: number,
+  data: { username?: string; email?: string; password?: string },
+) => {
+  return api.patch(`/auth/admins/${id}`, data);
+};
+
+export const deleteAdminApi = (id: number) => {
+  return api.delete(`/auth/admins/${id}`);
+};
