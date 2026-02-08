@@ -28,7 +28,7 @@ const OffersFormPage = lazy(() => import("../pages/OfferForm"));
 const ReportsPage = lazy(() => import("../pages/Reports"));
 const SettingsPage = lazy(() => import("../pages/Settings"));
 const InventoryDetailsPage = lazy(() => import("../pages/InventoryDetails"));
-
+const PageNotFound = lazy(() => import("../pages/PageNotFound"));
 const router = createBrowserRouter([
   {
     element: <RootLayout />,
@@ -155,6 +155,10 @@ const router = createBrowserRouter([
             ],
           },
         ],
+      },
+      {
+        path: "*",
+        element: <PageNotFound />,
       },
     ],
   },
