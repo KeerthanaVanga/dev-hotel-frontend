@@ -26,6 +26,7 @@ const WhatsAppBotPage = lazy(() => import("../pages/Whatsapp"));
 const OffersPage = lazy(() => import("../pages/OffersPage"));
 const OffersFormPage = lazy(() => import("../pages/OfferForm"));
 const ReportsPage = lazy(() => import("../pages/Reports"));
+const ProfilePage = lazy(() => import("../pages/Profile"));
 const SettingsPage = lazy(() => import("../pages/Settings"));
 const InventoryDetailsPage = lazy(() => import("../pages/InventoryDetails"));
 const PageNotFound = lazy(() => import("../pages/PageNotFound"));
@@ -143,6 +144,10 @@ const router = createBrowserRouter([
               {
                 path: "/reviews",
                 element: <ReviewsPage />,
+              },
+              {
+                path: "/profile",
+                element: <ProfilePage />,
               },
               {
                 path: "/settings",
